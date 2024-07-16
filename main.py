@@ -9,10 +9,10 @@ WENXIN_SK = "AKk9DEa516Uv08LVZv1DmHfeOSaGgMif"
 
 
 # 记录切换前的工作目录
-previous_dir = os.getcwd()
+#previous_dir = os.getcwd()
 # 将当前工作目录切换到.bat文件所在的目录
-bat_dir = r'gpt-sovits\0 一键启动脚本'
-os.chdir(bat_dir)
+#bat_dir = r'gpt-sovits\0 一键启动脚本'
+#os.chdir(bat_dir)
 # 启动语音合成api
 #try:
     # 使用os.startfile打开.bat文件
@@ -20,11 +20,11 @@ os.chdir(bat_dir)
 #except Exception as e:
 #    print("Error running .bat file:", e)
 # 切换回之前的工作目录
-os.chdir(previous_dir)
+#os.chdir(previous_dir)
 
 #建立聊天 
 def callback(response):
-        print("Response:", response)     
+        print("Response:", response)
 chat_baidu = baidutts.ChatBaidu(baidutts.get_token(WENXIN_AK,WENXIN_SK))
 
 
